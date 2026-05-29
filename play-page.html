@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieHub</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="login.html" class="logo"> Movie <span>Hub</span> </a>
+
+        <div class="search-box">
+          <input
+            type="search"
+            name=""
+            id="search-input"
+            list="movie-suggestions"
+            placeholder="Search movie"
+          />
+          <datalist id="movie-suggestions">
+            <option value="Hitman's Wife's Bodyguard"></option>
+            <option value="Spider-Man: No Way Home"></option>
+            <option value="The Batman"></option>
+            <option value="Doctor Strange"></option>
+            <option value="Avengers: Endgame"></option>
+            <option value="Joker"></option>
+            <option value="Inception"></option>
+            <option value="The Dark Knight"></option>
+            <option value="Interstellar"></option>
+            <option value="Dune"></option>
+          </datalist>
+          <i class="bx ri-search-line"></i>
+        </div>
+        <a href="secpage.html" class="sign-in">Sign in</a>
+
+        <div class="navbar">
+          <a href="index.html" class="nav-link">
+            <i class="bx ri-home-4-line"></i>
+            <span class="nav-link-tittle">Home</span>
+          </a>
+          <a href="#home" class="nav-link">
+            <i class="bx ri-fire-fill"></i>
+            <span class="nav-link-tittle">Trending</span>
+          </a>
+          <a href="explore.html" class="nav-link">
+            <i class="bx ri-compass-3-line"></i>
+            <span class="nav-link-tittle">Explore</span>
+          </a>
+          <a href="#home" class="nav-link">
+            <i class="bx ri-tv-line"></i>
+            <span class="nav-link-tittle">Movies</span>
+          </a>
+          <a href="index.html" class="nav-link">
+            <i class="bx ri-heart-line"></i>
+            <span class="nav-link-tittle">Favorite</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!--play movie container-->
+    <div class="play-container container">
+      <!--play image-->
+      <img
+        src="/public/play-page/play-background.jpg"
+        alt=""
+        class="play-img"
+      />
+      <!--play text-->
+      <div class="play-text">
+        <h2>Jumanji: Welcome to the Jungle</h2>
+        <!--rating-->
+        <div class="rating">
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
+          <i class="ri-star-half-line"></i>
+        </div>
+        <!--tags-->
+        <div class="tags">
+            <span>Action</span>
+            <span>Adventure</span>
+            <span>4K</span>
+        </div>
+        <!--trailer button-->
+           <a href="#" class="watch-btn">
+          <i class="bx ri-arrow-right-s-fill"></i>
+          <span>Watch the trailer</span>
+        </a>
+      </div>
+      <!--play btn-->
+      <i class="bx ri-arrow-right-s-fill play-movie"></i>
+      <!--video container-->
+      <div class="video-container">
+        <!--video box-->
+      <div class="video-box">
+         <video id="myvideo" src="./public/play-page/Jumanji.mp4" controls autoplay loop></video>
+        <!--video close icon-->
+        <a href="index.html#movies">
+          <i class="ri-close-line close-video"></i>
+        </a>
+      </div>
+      </div>
+      </div>
+    <!--copyright-->
+    <div class="copyright">
+      <p>&#169; CarpoolVenom All Eight Reserved</p>
+    </div>
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
